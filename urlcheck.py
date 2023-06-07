@@ -50,7 +50,7 @@ def main():
     with open("key.txt") as f:
         keys = f.read().splitlines()
 
-    urls_with_keys = [url + key for url in urls for key in keys]
+    urls_with_keys = [url + key + '/' for url in urls for key in keys]
 
     start_time = time.time()
 
